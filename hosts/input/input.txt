@@ -1,0 +1,25 @@
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+            [token] => c4ca4238a0b923820dcc509a6f75849b
+        )
+
+    [2] => Array
+        (
+            [outfile] => Array
+                (
+                    [name] => output.txt
+                    [type] => text/plain
+                    [tmp_name] => /var/www/clients/client0/web2/tmp/phprLCLyv
+                    [error] => 0
+                    [size] => 19800
+                )
+
+        )
+
+)

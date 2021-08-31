@@ -1,0 +1,154 @@
+<style>
+    @page {
+        margin: 1cm 1cm 1cm 2cm;
+        @bottom-right{
+            content: counter(page);
+        }
+    }
+    body{
+        width: 180mm;
+        font-family: Times, 'Times New Roman', serif; /* Шрифт с засечками */
+        color: black;
+        font-size: 10pt;
+    }
+    .show_small{
+        display: none;
+    }
+    .bordered{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    td.line{
+        border-bottom: 1px dashed black;
+    }
+    tr.bb th,
+    tr.bb td,
+    .bb{
+        border-bottom: 1px solid black;
+    }
+    tr.bbd th,
+    tr.bbd td,
+    .bbd{
+        border-bottom: 1px dashed black;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .sup{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    .gray{
+        color: gray;
+    }
+    .gotova{
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+    }
+    td>h1,
+    td>h2,
+    td>h3{
+        margin: 0;
+    }
+    .check{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+</style>
+<table style="width:100%;table-layout: fixed;">
+    <tr>
+        <td>[ORG_NAME]</td>
+        <td align="right" valign="top"><b>Заявка № [TIKET_NUMBER]</b></td>
+    </tr>
+    <tr><td colspan="2" class="bbd"><h2>[HEAD]</h2></td></tr>
+    <tr class="bbd"><th align="left">Инв. №:</th>
+        <td>[INVENTORY]</td></tr>
+    <tr><th align="left">Комплектация:</th>
+        <td>[KOMPLECTION]</td></tr>
+    <tr><th align="left">Откуда</th>
+        <td>[POSITION]</td></tr>
+    <tr><th align="left">Примечание:</th>
+        <td>[DESCRIPTION]</td></tr>
+    <tr>
+        <td>
+            <p>Оборудование на ремонт принял сотрудник</p><br/>
+            <p>__________________/[GIVE_FIO]</p>
+            <p class="sup gray">&emsp;&emsp;&emsp;Подпись</p>
+        </td>
+        <td class="bordered">
+            <p>Оборудование на ремонт сдал</p><br/>
+            <p>__________________/[SENDER_FIO]</p>
+            <p class="sup gray">&emsp;&emsp;&emsp;Подпись</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="line">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="2"><br/></td>
+    </tr>
+    <tr>
+        <td>
+            <table style="width:100%">
+                <tr>
+                    <td><h1>[TIKET_NUMBER]</h1></td>
+                    <td align="right"><h1>[INVENTORY]</h1></td>
+                </tr>
+            </table>
+        </td>
+        <td align="right"><h1>[POSITION]</h1></td>
+    </tr>
+    <tr><td colspan="2"><h2>[HEAD]</h2></td></tr>
+    <tr><th align="left">Наименование оборудования:</th>
+        <td>[DEVICE_NAME]</td></tr>
+    <tr><th align="left">МОЛ:</th>
+        <td>[MOL]</td></tr>
+    <tr><th align="left">Комплектация:</th>
+        <td>[KOMPLECTION]</td></tr>
+    <tr><th align="left">Примечание:</th>
+        <td>[DESCRIPTION]</td></tr>
+    <tr>
+        <td>
+            <p>Оборудование на ремонт принял сотрудник</p><br/>
+            <p>__________________/[GIVE_FIO]</p>
+            <p class="sup gray">&emsp;&emsp;&emsp;Подпись</p>
+        </td>
+        <td class="bordered">
+            <p>Оборудование на ремонт сдал</p><br/>
+            <p>__________________/[SENDER_FIO]</p>
+            <p class="sup gray">&emsp;&emsp;&emsp;Подпись</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br/>Выполнена «____» ____________ 20____&emsp;&emsp;&emsp;________________/_________________________</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="sup gray" style="padding-left: 370px;">Подпись&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Фамилия И.О.</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="line"></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="sup gray" align="center">Заполняется при возврате оборудования</td>
+    </tr>
+    <tr>
+        <td colspan="2">Оборудование получил, комплектация соответствует/не соответсвует.</td>
+    </tr>
+</table>
+
+<p><b></b></p>
+<p>"____"___________________ 20____ г. _____________________ /_____________________________________________________
+    <br/>
+    <span class="sup gray">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Дата
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Подпись
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Фамилия Имя Отчетсво полностью.
+    </span>
+</p>

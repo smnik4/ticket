@@ -1,0 +1,107 @@
+/*FORMS*/
+.field{
+    display: inline-block;
+}
+.field.full{
+    display: block;
+}
+.field input,
+.field select{
+    color: gray;
+    font-size: 16px;
+    padding: 0 4px;
+}
+.field input{
+    height: 22px;
+}
+.field select{
+    height: 26px;
+}
+.field input:focus,
+.field select:focus,
+.field input[type=button]:hover,
+.field input[type=submit]:hover{
+    color: black;
+}
+
+form .autocomplete{
+    position: relative;
+}
+form .autocomplete ul{
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid grey;
+    width: calc(100% - 8px);
+}
+form .autocomplete ul li{
+    padding: 3px 0;
+    border-top: 1px solid lightgrey;
+    cursor: pointer;
+}
+form .autocomplete ul li:first-child{
+    border-top: none;
+    padding: 0 0 3px 0;
+}
+form .autocomplete ul li:last-child{
+    padding: 3px 0 0 0;
+}
+form table input[type=text],
+form .form_vars input[type=text],
+form .form_vars input[type=password],
+form table select,
+form .form_vars select,
+form table textarea,
+form .form_vars textarea{
+    width: calc(100% - 6px);
+    padding: 2px;
+    border-width: 1px;
+}
+textarea{
+    resize: vertical;
+}
+.error_field{
+    border-color: red;
+    background-color: #fffacd;
+}
+.form_vars .inline{
+    display: inline-block;
+    margin-left: 1em;
+}
+.form_vars.inline>div{
+    display: inline-block;
+    margin-left: 1em;
+}
+form .form_item{
+    margin-bottom: 0.5em;
+}
+form .form_item .form_label{
+    font-weight: bold;
+}
+.form_item>.form_label,
+input+label{
+    user-select:none;
+}
+.action{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.action.edit{
+    background-image: url(/assets/img/edit_24.png);
+}
+.action.add{
+    background-image: url(/assets/img/add_24_1.png);
+}
+.form_item .form_fix{
+    color: red;
+}
+.form_item .form_fix_free{
+    color: blue;
+}

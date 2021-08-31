@@ -1,0 +1,40 @@
+body{
+    padding: 0.5em;
+    width: calc(100% - 1em);
+    background-image: url(/assets/img/auth_back.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    font-size: 1em;
+}
+#body>h1,
+#body>ul,
+#body>p{
+    color: white;
+}
+#loginform{
+    width: 300px;
+    margin: 0 auto 1em auto;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: #EEE;
+    background-color: #CCC;
+    color: black;
+}
+#loginform p{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px){
+    #loginform{
+        width: calc(100% - 3em);
+    }
+}
+input.image{
+    cursor: pointer;
+}
+input[type=text],
+input[type=password]{
+    /*padding: 8px 12px;*/
+    font-size: 16px;
+}
